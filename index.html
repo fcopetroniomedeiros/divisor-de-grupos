@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divisor de Grupos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+</head>
+<body>
+  <header>
+    <h1>Divisor de Grupos de Estudantes</h1>
+  </header>
+  <div class="container">
+    <div class="file-upload-box">
+      <label for="fileInput">Escolha um arquivo com a lista de estudantes:</label>
+      <input type="file" id="fileInput" accept=".txt">
+    </div>
+    <div id="namesContainer"></div>
+    <div id="groupConfig" style="text-align: left; margin-top: 40px;">
+      <label for="groupSize">Tamanho do grupo:</label>
+      <input type="number" id="groupSize" min="1">
+      <button id="generateGroups">Gerar Grupos</button>
+    </div>
+    <div id="groupsContainer"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
